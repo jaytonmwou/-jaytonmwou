@@ -1,0 +1,8 @@
+    for (i = 0; i != this->vexnum; i++) {
+        temp = this->arc[i].firstarc;
+        while (temp) {
+            ++this->indegree[temp->adjvex];
+            temp = temp->next;
+        }
+ 
+    }
